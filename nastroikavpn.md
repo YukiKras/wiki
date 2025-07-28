@@ -9,36 +9,43 @@ dateCreated: 2025-07-26T20:07:39.951Z
 ---
 
 # О чём эта статья?
+
 Здесь показано как вставить Vless ключ в различные VPN клиенты
+
 # Happ (Android)
-Скачиваем и устанавливаем приложение: https://www.happ.su/main/ru
+
+Скачиваем и устанавливаем приложение: <https://www.happ.su/main/ru>
 Копируем Vless ключ который начинается с `vless://` из услуги или 3x-ui/marzban панелей:
-![waterfox_tsmn4qyha9.png](/waterfox_tsmn4qyha9.png)
+![waterfox_tsmn4qyha9.png](/nastroikavpn/waterfox_tsmn4qyha9.png)
 
 Заходим в приложение и вставляем ключ из буфера обмена:
-![photo_2025-07-28_14-02-59_(среднее).jpg](/photo_2025-07-28_14-02-59_(среднее).jpg)
-
+![photo_2025-07-28_14-02-59_(среднее).jpg](/nastroikavpn/photo_2025-07-28_14-02-59_(среднее).jpg)
 
 Далее жмём на кнопку включения:
-![photo_2025-07-28_14-03-04_(среднее).jpg](/photo_2025-07-28_14-03-04_(среднее).jpg)
+![photo_2025-07-28_14-03-04_(среднее).jpg](/nastroikavpn/photo_2025-07-28_14-03-04_(среднее).jpg)
 
 Готово! VPN включён!
+
 # V2RayTun (iOS, MacOS)
-Скачиваем и устанавливаем приложение: https://apps.apple.com/kz/app/v2raytun/id6476628951
+
+Скачиваем и устанавливаем приложение: <https://apps.apple.com/kz/app/v2raytun/id6476628951>
 Копируем Vless ключ который начинается с `vless://` из услуги или 3x-ui/marzban панелей:
-![waterfox_tsmn4qyha9.png](/waterfox_tsmn4qyha9.png)
+![waterfox_tsmn4qyha9.png](/nastroikavpn/waterfox_tsmn4qyha9.png)
 
 Заходим в приложение и вставляем ключ из буфера обмена:
-![4q2bnxwhuv.png](/4q2bnxwhuv.png)
+![4q2bnxwhuv.png](/nastroikavpn/4q2bnxwhuv.png)
 
-![qdg2xgix0r.png](/qdg2xgix0r.png)
+![qdg2xgix0r.png](nastroikavpn//qdg2xgix0r.png)
 
 Далее жмём на кнопку включения:
-![uqgvgena4y.png](/uqgvgena4y.png)
+![uqgvgena4y.png](/nastroikavpn/uqgvgena4y.png)
 
 # Nekoray (Windows, Linux)
+
 ## Ссылки для скачивания Nekoray
+
 Вот список всех доступных ссылок для загрузки Nekoray, разделенных по операционным системам:
+
 1. Nekoray для Windows (64-bit)
 [Скачать](https://github.com/Mahdi-zarei/nekoray/releases/download/4.3.5/nekoray-4.3.5-2025-05-16-windows64.zip)
 Это версия для 64-битных систем Windows. Подходит для большинства современных компьютеров под управлением Windows 10 или 11.
@@ -50,7 +57,9 @@ dateCreated: 2025-07-26T20:07:39.951Z
 3. Nekoray для Debian/Ubuntu (64-bit, пакет .deb)
 [Скачать](https://github.com/Mahdi-zarei/nekoray/releases/download/4.3.5/nekoray-4.3.5-2025-05-16-debian-x64.deb)
 Это версия в формате .deb для систем на базе Debian и Ubuntu. Подходит для удобной установки через пакетный менеджер.
+
 ## Установка и настройка Nekoray на Windows
+
 **Шаг 1: Загрузка Nekoray**
 
 Для начала необходимо скачать программу по ссылке:
@@ -73,10 +82,12 @@ dateCreated: 2025-07-26T20:07:39.951Z
 Программа не требует отдельной установки и готова к использованию сразу после запуска. Однако потребуются некоторые дополнительные настройки для стабильной работы.
 
 ### Первичная настройка Nekoray на Windows
+
 1. **Выбор ядра sing-box**:
 При первом запуске обязательно выберите ядро **sing-box**. Это необходимо для корректной работы.
 ![image11.png](/image11.png)
 Если вы ранее устанавливали Nekoray и выбрали другое ядро, вам потребуется:
+
 - Перейти в **Основные настройки**.
 - Открыть раздел **Ядро**.
 - Выбрать ядро **sing-box**.
@@ -84,23 +95,26 @@ dateCreated: 2025-07-26T20:07:39.951Z
 2. Добавление ссылки на VPN:
 Копируем Vless ключ который начинается с `vless://` из услуги или 3x-ui/marzban панелей:
 ![waterfox_tsmn4qyha9.png](/waterfox_tsmn4qyha9.png)
+
 - Вставьте её в Nekoray, используя сочетание клавиш **Ctrl + V** или через меню:
 - - Нажмите на кнопку **Сервер**.
 - - Выберите опцию **Добавить профиль из буфера обмена**.
-![image2.png](/image2.png)
+![image2.png](/nekoray/image2.png)
 
 3. **Активация режима TUN и запуск:**
+
 - Активируйте **Режим TUN**.
 - Запустите конфигурацию, нажав по конфигу правой кнопкой мыши и выбрав опцию **Запуск**.
-![image3.png](/image3.png)
+![image3.png](/nekoray/image3.png)
 Теперь **Nekoray** настроен и проксирует все соединения. Для удобства вы можете включить автозапуск **Nekoray**.
 
 Для этого выполните следующие шаги:
 
 1. Нажмите на кнопку **"Программа"**.
 2. Установите галочки на двух пунктах:
+
 - - **"Запускаться вместе с системой".**
 - - **"Запомнить последний профиль".**
 
 После этих действий **Nekoray** будет автоматически запускаться вместе с системой.
-![image4.png](/image4.png)
+![image4.png](/nekoray/image4.png)

@@ -9,7 +9,9 @@ dateCreated: 2025-06-30T09:54:31.404Z
 ---
 
 # Для чего эта страница
+
 В ней описаны шаги которые обычно делаю после установки Windows.
+
 1. Настройка проводника Windows
 2. Отключение UAC
 3. Активация Windows, например через [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
