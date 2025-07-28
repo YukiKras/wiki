@@ -2,7 +2,7 @@
 title: Инструкция по использованию услуги «VPN»
 description: 
 published: true
-date: 2025-07-07T10:41:49.210Z
+date: 2025-07-28T13:25:10.696Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-07T10:36:02.878Z
@@ -49,7 +49,4 @@ dateCreated: 2025-07-07T10:36:02.878Z
 Для Shadowsocks создание ключа аналогично VLESS:
 ![image34.jpg](/aeza/vpn/image34.jpg)
 
-Для ключей Vless и Shadowsocks есть несколько приложений для подключения:
-1. [**Nekoray**](https://wiki.yukikras.net/ru/nekoray-universal-client) (Для Операционных систем Windows, Linux)
-2. [**Happ**](https://www.happ.su/main/ru/faq/adding-configuration-subscription#id-2.-dobavlenie-cherez-url-ssylku) (Для Android)
-3. **V2RayTun** (MacBook на процессорах от M1 и выше, Iphone, Ipad)
+С тем как подключить клиентов к услуге вы можете ознакомиться в [следующей статье](https://wiki.yukikras.net/ru/nastroikavpn)
