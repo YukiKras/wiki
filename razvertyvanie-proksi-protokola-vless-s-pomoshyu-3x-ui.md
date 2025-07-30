@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-07-30T14:37:13.880Z
+date: 2025-07-30T14:41:43.870Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -81,3 +81,9 @@ cat /root/3x-ui.txt
 И отсюда вы уже сможете скопировать Vless ключ нового клиента:
 
 ![waterfox_qhz7vjkakp.png](/3xui/waterfox_qhz7vjkakp.png)
+
+## Как исправить ошибку 9curl: No such file or directory
+
+![waterfox_nrr8n4ogpw.png](/3xui/waterfox_nrr8n4ogpw.png)
+
+Вероятнее всего вы подключились по VNC, для правильной установки к серверу нужно подкючаться по SSH:
