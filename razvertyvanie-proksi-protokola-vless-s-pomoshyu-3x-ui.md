@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-07-30T14:21:25.945Z
+date: 2025-07-30T14:37:13.880Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -59,7 +59,25 @@ cat /root/3x-ui.txt
 ```
 
 Копируем ссылку и открываем ее в вашем браузере и попадаем на страницу входа в панель 3x-ui. Указываем данные из консоли и производим вход.
+
 ![image(4).png](/3xui/image(4).png)
+
 После входа мы увидим главную страницу панели:
+
 ![image(5).png](/3xui/image(5).png)
-Переходим во вкладку **Подключения**, далее нажимаем **Добавить подключение**
+
+Переходим во вкладку **Инбаунды**, далее нажимаем по существующему подключения нажимаем на три точки и нажимаем на **Создать клиента**:
+
+![waterfox_wwlqygggad.png](/3xui/waterfox_wwlqygggad.png)
+
+Выбираем Flow xtls-rprx-vision и нажимаем на **Добавить**:
+
+![waterfox_czcoto7w8e.png](/3xui/waterfox_czcoto7w8e.png)
+
+Далее переходим в раздел с информацией нового клиента:
+
+![waterfox_1qdv8gjbor.png](/3xui/waterfox_1qdv8gjbor.png)
+
+И отсюда вы уже сможете скопировать Vless ключ нового клиента:
+
+![waterfox_qhz7vjkakp.png](/3xui/waterfox_qhz7vjkakp.png)
