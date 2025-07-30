@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-07-30T14:41:43.870Z
+date: 2025-07-30T14:42:27.595Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -86,4 +86,4 @@ cat /root/3x-ui.txt
 
 ![waterfox_nrr8n4ogpw.png](/3xui/waterfox_nrr8n4ogpw.png)
 
-Вероятнее всего вы подключились по VNC, для правильной установки к серверу нужно подкючаться по SSH:
+Вероятнее всего вы подключились по VNC, для правильной установки к серверу нужно подкючаться по SSH: https://wiki.yukikras.net/ru/razvertyvanie-proksi-protokola-vless-s-pomoshyu-3x-ui#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D1%83-%D0%BF%D0%BE-ssh
