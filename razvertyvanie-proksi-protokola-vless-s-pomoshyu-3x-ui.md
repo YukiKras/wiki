@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-07-30T14:42:27.595Z
+date: 2025-07-30T14:56:00.942Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -51,7 +51,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 ## Часто задаваемые вопросы (FAQ)
 
-## Как добавлять новых клиентов?
+### Как добавлять новых клиентов?
 Вводим в консоле сервера следующую команду:
 
 ``` bash
@@ -82,7 +82,7 @@ cat /root/3x-ui.txt
 
 ![waterfox_qhz7vjkakp.png](/3xui/waterfox_qhz7vjkakp.png)
 
-## Как исправить ошибку 9curl: No such file or directory
+### Как исправить ошибку 9curl: No such file or directory
 
 ![waterfox_nrr8n4ogpw.png](/3xui/waterfox_nrr8n4ogpw.png)
 
