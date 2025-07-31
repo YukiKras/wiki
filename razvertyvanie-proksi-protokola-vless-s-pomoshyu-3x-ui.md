@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-07-31T06:52:22.254Z
+date: 2025-07-31T22:45:42.804Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -21,18 +21,6 @@ dateCreated: 2025-07-06T08:15:10.304Z
 ![msedge_z3zf5vjwy6.png](/outline/msedge_z3zf5vjwy6.png)
 3. Выберите в качесте ОС сервера Ubuntu 24.04 и закажите его:
 ![msedge_h7fwolvsqu.png](/outline/msedge_h7fwolvsqu.png)
-
-## Переустановка существующего сервера
-
-Для этого перейдите на странице услуги, нажмите на кнопку "**Переустановить**"
-
-![msedge_jferqj8vyu.png](/3xui/msedge_jferqj8vyu.png)
-
-Выберите в качестве ОС сервера Ubuntu 24.04, и нажмите на "**Переустановить**"
-
-![msedge_tqrfrqmqwt.png](/3xui/msedge_tqrfrqmqwt.png)
-
-Готово! После переустановки сервера можете переходить к следующему шагу.
 
 # Создание личного прокси за несколько минут
 
