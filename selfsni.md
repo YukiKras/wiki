@@ -2,7 +2,7 @@
 title: Установка своего SNI сайта
 description: 
 published: true
-date: 2025-07-28T13:12:40.522Z
+date: 2025-08-01T13:10:28.677Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-28T13:12:40.522Z
@@ -61,9 +61,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 ![waterfox_fzhgnhtep4.png](/selfsni/waterfox_fzhgnhtep4.png)
 
-Далее копируем настройки из консоли и вставляем в панель, нажимаем на "**Get New Cert**" и "**Обновить**":
+Далее копируем настройки из консоли и вставляем в панель, нажимаем на "**Get New Cert**":
 
-![waterfox_da9mtlg2br.png](/selfsni/waterfox_da9mtlg2br.png)
+![waterfox_rgqanbgrft.png](/selfsni/waterfox_rgqanbgrft.png)
+
+И только после 3 шага из скриншота нажимаем на кнопку "**Обновить**" (шаг 4)
 
 Далее необходимо скопировать новые Vless ключи и перенастроить ваших клиентов.
 
