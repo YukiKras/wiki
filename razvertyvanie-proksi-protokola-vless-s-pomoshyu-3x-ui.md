@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-04T11:56:59.177Z
+date: 2025-08-04T11:57:58.848Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -71,7 +71,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 С тем как подключить клиентов к вашему серверу вы можете ознакомиться в [следующей статье](https://wiki.yukikras.net/ru/nastroikavpn)
 
-## Установка 3x-ui через предустоновленное ПО
+## Настройка 3x-ui через предустоновленное ПО
 
 **Подключаемся к серверу посредством WinSCP** и логина, пароля из личного кабинета, либо письма с вашей почты (в случае переустановки ОС).
 
