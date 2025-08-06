@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью Marzban
 description: 
 published: true
-date: 2025-07-07T10:41:20.881Z
+date: 2025-07-30T17:45:24.981Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T07:40:17.003Z
@@ -278,3 +278,39 @@ openssl rand -hex 8
 ## 3. Подключение ключа в клиент VLESS
 
 С тем как подключить клиентов к вашему серверу вы можете ознакомиться в [следующей статье](https://wiki.yukikras.net/ru/nastroikavpn)
+
+## Часто задаваемые вопросы (FAQ)
+
+### Как исправить ошибку "Таймаут" в Hiddify?
+
+Возвращаемся в конфигурацию панели и находим пункт "Routing"
+
+![timeoutfix1.jpg](/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban/timeoutfix1.jpg)
+
+Вставляем следующее правило в самое начало блока rules после квадратной скобки
+
+``` json
+{
+        "outboundTag": "DIRECT",
+        "domain": [
+          "full:cp.cloudflare.com",
+          "domain:msftconnecttest.com",
+          "domain:msftncsi.com",
+          "domain:connectivitycheck.gstatic.com",
+          "domain:captive.apple.com",
+          "full:detectportal.firefox.com",
+          "domain:networkcheck.kde.org",
+          "full:*.gstatic.com"
+        ],
+        "type": "field"
+      },
+```
+
+![timeoutfix2.jpg](/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban/timeoutfix2.jpg)
+
+После внесения изменений, необходимо их **сохранить** и **перезагрузить ядро**
+
+![timeoutfix3.jpg](/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban/timeoutfix3.jpg)
+
+Готово! Ошибка должна пропасть.
+
