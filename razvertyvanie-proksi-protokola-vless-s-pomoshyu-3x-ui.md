@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-08T15:07:40.839Z
+date: 2025-08-08T15:53:46.093Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -75,7 +75,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 ## Подключение ключа в клиент VLESS
 
-С тем как подключить клиентов к вашему серверу вы можете ознакомиться в [следующей статье](https://wiki.yukikras.net/ru/nastroikavpn)
+> **С тем как подключить клиентов к вашему серверу вы можете ознакомиться в [следующей статье](https://wiki.yukikras.net/ru/nastroikavpn)**
+{.is-info}
 
 ## Настройка 3x-ui через предустоновленное ПО
 
@@ -107,7 +108,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 > Чем ниже пинг до определенного сайта, тем меньше задержка при работающем соединении
 > **Необходимо выбирать надежные сайты, если сайт будет недоступен, соединения не будет.**
 > **Обязательно выбирайте не популярные но надежные сайты в качестве Server Name и Dest для вашей конфигурации Vless TCP Reality.**
-> 
 {.is-warning}
 
 **Требования к сайту:**
@@ -158,7 +158,6 @@ docscenter.su
 ![waterfox_qhz7vjkakp.png](/3xui/waterfox_qhz7vjkakp.png)
 
 > Готово! Вы скопировали Vless ключ для своего клиента, с настройкой клиентов вы можете ознакомиться в [следующей статье](https://wiki.yukikras.net/ru/nastroikavpn)
-> 
 {.is-success}
 
 # Часто задаваемые вопросы (FAQ)
@@ -193,6 +192,90 @@ cat /root/3x-ui.txt
 И отсюда вы уже сможете скопировать Vless ключ нового клиента:
 
 ![waterfox_qhz7vjkakp.png](/3xui/waterfox_qhz7vjkakp.png)
+
+## Как исправить ошибку предупреждение системы безопасности
+
+Если у вас в панели выводится следующее сообщение:
+
+![waterfox_kxahx68ipf.png](/3xui/waterfox_kxahx68ipf.png)
+
+Данную ошибку можно исправить привязав DNS к панели 3x-ui, для этого требуется:
+
+1. Приобрести и привязать доменное имя к серверу с панелью 3x-ui (возможно использование собственного доменного имени)
+2. Выпустить SSL сертификат для доменного имени и указать сертификат в конфигурации панели 3x-ui
+
+> Вы можете быстро и легко приобрести домен у нас на сайте за несколько минут - <https://my.aeza.net/order/domain>
+{.is-info}
+
+Если доменное имя уже имеется либо приобретено в другом месте, **нужно добавить A-запись направленую на сервер с панелью 3x-ui**
+
+Правильно добавленная А-запись выглядит следующим образом:
+![image10.jpg](/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban/image10.jpg)
+После установки А-записи, необходимо дождаться обновления данных в глобальной сети:
+**Обычно это происходит в течении 5-15 минут, но иногда время обновления DNS-записей занимает до 24 часов.**
+
+Проверить обновление данных в сети можно в различных сервисах, например: <https://dnschecker.org>
+
+Далее [подключаемся к серверу по SSH](https://wiki.yukikras.net/ru/kak-podklyuchitsya-po-ssh-i-sftp)
+
+Устанавливаем certbot:
+
+``` bash
+apt install certbot -y
+```
+
+Его успешная установка выглядит примерно так:
+
+![windowsterminal_b1op7cobri.png](/3xui/windowsterminal_b1op7cobri.png)
+
+Далее выпускаем SSL сертификат с помощью следующей команды:
+
+> В команде ниже необходимо обязательно указать Ваше используемое доменное имя после параметра -d и email адрес после параметра --email
+{.is-info}
+
+``` bash
+certbot certonly --standalone -d Ваше_доменное_имя --email Ваш_email_адрес --agree-tos --no-eff-email
+```
+
+Его успешный выпуск выглядит следующим образом:
+
+![windowsterminal_vdfk0omc0k.png](/3xui/windowsterminal_vdfk0omc0k.png)
+
+Далее переходим в 3x-ui панель, в её настройки:
+
+![waterfox_hyvhwwwdxb.png](/3xui/waterfox_hyvhwwwdxb.png)
+
+Прокручиваем до раздела с настройками сертификатов и вставляем их из консоли:
+
+![waterfox_8cs5owsxql.png](/3xui/waterfox_8cs5owsxql.png)
+
+Далее прокручиваем до верха страницы и нажимаем на кнопку "**Сохранить**":
+
+![waterfox_dqjbo2md0q.png](/3xui/waterfox_dqjbo2md0q.png)
+
+Далее нажимаем на кнопку "**Перезапуск панели**":
+
+![waterfox_qrqttt37ub.png](/3xui/waterfox_qrqttt37ub.png)
+
+Соглашаемся с данным предупреждением нажатием на кнопки "**Да**":
+
+![waterfox_tdvotectys.png](/3xui/waterfox_tdvotectys.png)
+
+Далее вас перекинет на страницу с ошибкой браузера:
+
+![waterfox_nx3ywimyqa.png](/3xui/waterfox_nx3ywimyqa.png)
+
+Чтобы её исправить нужно вместо цифр IP адреса вашего сервера ввести тут ваше доменное имя и нажать на **Enter**:
+
+![waterfox_pnifjrr2xm.png](/3xui/waterfox_pnifjrr2xm.png)
+
+> **Вам отныне необходимо входить в панель по ссылке с доменным именем вместо ссылки с IP адресом сервера!**
+{.is-warning}
+
+> Готово! После выполнения данной инструкции предупреждения не будет!
+{.is-success}
+
+![waterfox_iabxj20q8q.png](/3xui/waterfox_iabxj20q8q.png)
 
 ## Как исправить ошибку 9curl: No such file or directory
 
