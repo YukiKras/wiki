@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-06T00:21:52.399Z
+date: 2025-08-08T15:07:40.839Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -36,11 +36,13 @@ dateCreated: 2025-07-06T08:15:10.304Z
 
 ![msedge_tqrfrqmqwt.png](/3xui/msedge_tqrfrqmqwt.png)
 
-Готово! После переустановки сервера можете переходить к следующему шагу.
+> Готово! После переустановки сервера можете переходить к следующему шагу.
+{.is-success}
 
 ## Подключение к серверу по SSH
 
-Если у вас не установлен PuTTY то вы можете его скачать отсюда: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+> Если у вас не установлен PuTTY то вы можете его скачать отсюда: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+{.is-info}
 
 1. В поле **Host Name** — укажите IP-адрес Вашего сервера.
 2. Далее введите порт. По умолчанию это — 22
@@ -51,8 +53,10 @@ dateCreated: 2025-07-06T08:15:10.304Z
 Затем вводим **пароль.**
 ![image.jpg](/ssh-sftp/image.jpg)
 > Пароль в PuTTY вводится невидимыми символами!
+{.is-warning}
 
-Чтобы вставить текст в PuTTY, необходимо нажать **ПКМ** (правая кнопка мыши) для Windows.
+> Чтобы вставить текст в PuTTY, необходимо нажать **ПКМ** (правая кнопка мыши) для Windows.
+{.is-info}
 
 ## Установка 3x-ui вручную
 
