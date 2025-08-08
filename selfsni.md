@@ -2,7 +2,7 @@
 title: Установка своего SNI сайта
 description: 
 published: true
-date: 2025-08-01T13:10:28.677Z
+date: 2025-08-08T15:04:09.861Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-28T13:12:40.522Z
@@ -80,3 +80,58 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 ![waterfox_phziqluthw.png](/selfsni/waterfox_phziqluthw.png)
 
 Далее нажмите на клавишу **F5** и скопируйте новые Vless ключи и перенастройте на работу с ними ваших клиентов.
+
+# Разбор ошибок и путей их решения
+
+## Порт 443/80 занят, пожалуйста освободите порт
+
+Если у вас выводится это сообщение, это означает что у вас вероятнее всего настроен Vless на 443 порту
+
+![windowsterminal_qiygnscw0r.png](/selfsni/windowsterminal_qiygnscw0r.png)
+
+Рассмотрим пути решения для 3x-ui и Marzban панелей.
+
+### Временное отключение инбаунда в 3x-ui панели
+
+Для этого откройте 3x-ui панель и перейдите в раздел "Инбаунды":
+
+![bbchexvq6n.png](/selfsni/bbchexvq6n.png)
+
+И нужно переключить данный переключатель у данного порта:
+
+![waterfox_w8xamtaaaz.png](/selfsni/waterfox_w8xamtaaaz.png)
+
+> Готово, можете просто начать [пункт с установкой скрипта](https://wiki.yukikras.net/ru/selfsni#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0) заново
+{.is-success}
+
+> **После настройки не забудьте обратно включить!**
+{.is-warning}
+
+### Временная смена порта в Marzban панели
+
+
+Для этого откройте Marzban панель и перейдите в его настройки:
+
+![n0khshl0hn.png](/selfsni/n0khshl0hn.png)
+
+Далее прописываес порт у Vless временно на какой-то другой, например на 8443 порт:
+
+![ufnhzw3pcd.png](/selfsni/ufnhzw3pcd.png)
+
+Далее нажимаем на кнопку **Сохранить**
+
+> Готово, можете просто начать [пункт с установкой скрипта](https://wiki.yukikras.net/ru/selfsni#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0) заново
+{.is-success}
+
+> **После настройки не забудьте обратно сменить порт на 443!**
+{.is-warning}
+
+## A-запись домена не соответствует внешнему IP сервера или не удалось получить A-запись для домена
+
+Если у вас выводится это сообщение:
+
+![windowsterminal_dd8wgkzayg.png](/selfsni/windowsterminal_dd8wgkzayg.png)
+
+То это означает что DNS записи ещё пока не были обновлены или вы написали доменное имя с опечаткой.
+
+Обновление DNS записей обычно занимает до 24 часов, в некоторых случаях это может занимать 72 часа.
