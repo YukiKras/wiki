@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-12T09:15:56.729Z
+date: 2025-08-12T09:48:06.053Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -162,7 +162,7 @@ docscenter.su
 Необходимо установить порт на значение **443**, так же нажать на кнопку **"Get New Cert"**
 После внесения изменений, необходимо нажать кнопку **"Создать"**
 
-![3xui_pred5.jpg](/3xui/3xui_pred5.jpg)
+![waterfox_hozwr4nvhb.png](/3xui/waterfox_hozwr4nvhb.png)
 
 Соединение создано, откроем список пользоваталей.
 
