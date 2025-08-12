@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-12T09:48:06.053Z
+date: 2025-08-12T09:52:07.328Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -21,7 +21,7 @@ dateCreated: 2025-07-06T08:15:10.304Z
 Для начала необходимо заказать сервер, рассмотрим на примере Aeza:
 
 1. Перейдите на страницу с виртуальными серверами: <https://my-aeza.net/order/vps>
-2. Выберите желаемую локацию, для Outline подайдёт самые дешёвые тарифы по 4,94 € мес.:
+2. Выберите желаемую локацию, для 3x-ui подайдёт самые дешёвые тарифы по 4,94 € мес.:
 ![msedge_z3zf5vjwy6.png](/outline/msedge_z3zf5vjwy6.png)
 3. Выберите в качесте ОС сервера Ubuntu 24.04 и закажите его:
 ![msedge_h7fwolvsqu.png](/outline/msedge_h7fwolvsqu.png)
