@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-12T09:06:04.782Z
+date: 2025-08-12T09:15:56.729Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -117,7 +117,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 Переходим во вкладку **Подключения**, далее нажимаем **Добавить подключение**
 
-![3xui_pred4.png](/3xui/3xui_pred4.png)
+![waterfox_kkzdfkgdsg.png](/3xui/waterfox_kkzdfkgdsg.png)
 
 Настроим Vless TCP Reality более правильно.
 
