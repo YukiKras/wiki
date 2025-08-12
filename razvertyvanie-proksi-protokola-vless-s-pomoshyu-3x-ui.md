@@ -2,7 +2,7 @@
 title: Развертывание прокси протокола VLESS с помощью 3x-ui
 description: 
 published: true
-date: 2025-08-12T08:30:02.396Z
+date: 2025-08-12T09:06:04.782Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:15:10.304Z
@@ -235,59 +235,48 @@ cat /root/3x-ui.txt
 
 Далее [подключаемся к серверу по SSH](https://wiki.yukikras.net/ru/kak-podklyuchitsya-po-ssh-i-sftp)
 
-Устанавливаем certbot:
+Вводим следующую команду:
 
 ``` bash
-apt install certbot -y
+x-ui
 ```
 
-Его успешная установка выглядит примерно так:
+Откроется меню управления x-ui, необходимо ввести цифру 18 и нажать на **Enter**:
 
-![windowsterminal_b1op7cobri.png](/3xui/windowsterminal_b1op7cobri.png)
+![termius_tlkt7vjd5f.png](/3xui/termius_tlkt7vjd5f.png)
 
-Далее выпускаем SSL сертификат с помощью следующей команды:
+Далее необходимо ввести цифру 1 и нажать на **Enter**:
 
-> В команде ниже необходимо обязательно указать Ваше используемое доменное имя после параметра -d и email адрес после параметра --email
-{.is-info}
+![termius_6k8qqzqtil.png](/3xui/termius_6k8qqzqtil.png)
 
-``` bash
-certbot certonly --standalone -d Ваше_доменное_имя --email Ваш_email_адрес --agree-tos --no-eff-email
-```
+Далее тут необходимо указать ваше доменное имя и нажать на **Enter**:
 
-Его успешный выпуск выглядит следующим образом:
+![termius_qb03gyzthh.png](/3xui/termius_qb03gyzthh.png)
 
-![windowsterminal_vdfk0omc0k.png](/3xui/windowsterminal_vdfk0omc0k.png)
+Далее спросят про порт, тут ничего вводить не надо, просто нажмите на **Enter**:
 
-Далее переходим в 3x-ui панель, в её настройки:
+![termius_jxvuwkuq1i.png](/3xui/termius_jxvuwkuq1i.png)
 
-![waterfox_hyvhwwwdxb.png](/3xui/waterfox_hyvhwwwdxb.png)
+При ответе на вопрос:
 
-Прокручиваем до раздела с настройками сертификатов и вставляем их из консоли:
+> Would you like to modify --reloadcmd for ACME? (y/n):
 
-![waterfox_8cs5owsxql.png](/3xui/waterfox_8cs5owsxql.png)
+Вводим английскую букву `y` и жмём **Enter**:
 
-Далее прокручиваем до верха страницы и нажимаем на кнопку "**Сохранить**":
+![termius_j4n7ljntqp.png](/3xui/termius_j4n7ljntqp.png)
 
-![waterfox_dqjbo2md0q.png](/3xui/waterfox_dqjbo2md0q.png)
+При ответе на вопрос:
 
-Далее нажимаем на кнопку "**Перезапуск панели**":
+> Would you like to set this certificate for the panel? (y/n):
 
-![waterfox_qrqttt37ub.png](/3xui/waterfox_qrqttt37ub.png)
+Вводим английскую букву `y` и жмём **Enter**:
 
-Соглашаемся с данным предупреждением нажатием на кнопки "**Да**":
 
-![waterfox_tdvotectys.png](/3xui/waterfox_tdvotectys.png)
+![termius_pawvhwlkxg.png](/3xui/termius_pawvhwlkxg.png)
 
-Далее вас перекинет на страницу с ошибкой браузера:
+Теперь вам нужно будет входить в панель по указанной в Access URL ссылке:
 
-![waterfox_nx3ywimyqa.png](/3xui/waterfox_nx3ywimyqa.png)
-
-Чтобы её исправить нужно вместо цифр IP адреса вашего сервера ввести тут ваше доменное имя и нажать на **Enter**:
-
-![waterfox_pnifjrr2xm.png](/3xui/waterfox_pnifjrr2xm.png)
-
-> **Вам отныне необходимо входить в панель по ссылке с доменным именем вместо ссылки с IP адресом сервера!**
-{.is-warning}
+![termius_4opwb9urk3.png](/3xui/termius_4opwb9urk3.png)
 
 > Готово! После выполнения данной инструкции предупреждения не будет!
 {.is-success}
