@@ -2,7 +2,7 @@
 title: Универсальный клиент для современных протоколов VPN - NekoRay
 description: 
 published: true
-date: 2025-07-06T08:57:24.305Z
+date: 2025-08-27T19:26:18.796Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:36:03.243Z
@@ -34,15 +34,15 @@ Nekoray – это мощное и удобное ПО для работы с с
 Вот список всех доступных ссылок для загрузки Nekoray, разделенных по операционным системам:
 
 1. Nekoray для Windows (64-bit)
-[Скачать](https://github.com/Mahdi-zarei/nekoray/releases/download/4.3.5/nekoray-4.3.5-2025-05-16-windows64.zip)
+[Скачать](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-windows64.zip)
 Это версия для 64-битных систем Windows. Подходит для большинства современных компьютеров под управлением Windows 10 или 11.
 
 2. Nekoray для Linux (64-bit, архив)
-[Скачать](https://github.com/Mahdi-zarei/nekoray/releases/download/4.3.5/nekoray-4.3.5-2025-05-16-linux64.zip)
+[Скачать](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-linux64.zip)
 Это архивная версия для пользователей Linux, которую необходимо распаковать перед использованием.
 
 3. Nekoray для Debian/Ubuntu (64-bit, пакет .deb)
-[Скачать](https://github.com/Mahdi-zarei/nekoray/releases/download/4.3.5/nekoray-4.3.5-2025-05-16-debian-x64.deb)
+[Скачать](https://github.com/MatsuriDayo/nekoray/releases/download/3.26/nekoray-3.26-2023-12-09-debian-x64.deb)
 Это версия в формате .deb для систем на базе Debian и Ubuntu. Подходит для удобной установки через пакетный менеджер.
 
 ## Установка и настройка Nekoray на Windows
