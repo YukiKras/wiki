@@ -2,7 +2,7 @@
 title: Универсальный клиент для современных протоколов VPN - NekoRay
 description: 
 published: true
-date: 2025-08-27T19:26:18.796Z
+date: 2025-08-27T19:27:39.598Z
 tags: 
 editor: markdown
 dateCreated: 2025-07-06T08:36:03.243Z
