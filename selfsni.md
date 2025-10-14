@@ -41,10 +41,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 Вводите его и нажимаете на **Enter**
 
-Далее скрипт запросит выбрать внутренний SelfSNI порт, вы можете его оставить по умолчанию просто нажав на **Enter**:
-
-![windowsterminal_wyzkp2ftgv.png](/selfsni/windowsterminal_wyzkp2ftgv.png)
-
 Готово! Просто дожидайтесь установки, результат успешной установки выглядит так:
 
 ![windowsterminal_sytorbczbs.png](/selfsni/windowsterminal_sytorbczbs.png)
@@ -61,11 +57,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 ![waterfox_fzhgnhtep4.png](/selfsni/waterfox_fzhgnhtep4.png)
 
-Далее копируем настройки из консоли и вставляем в панель, нажимаем на "**Get New Cert**":
+Далее копируем настройки из консоли и вставляем в панель, обязательно меняем Xver на 1 и нажимаем на "**Get New Cert**":
 
 ![waterfox_rgqanbgrft.png](/selfsni/waterfox_rgqanbgrft.png)
 
-И только после 3 шага из скриншота нажимаем на кнопку "**Обновить**" (шаг 4)
+И только после 4 шага из скриншота нажимаем на кнопку "**Обновить**" (шаг 5)
 
 Далее необходимо скопировать новые Vless ключи и перенастроить ваших клиентов.
 
@@ -75,7 +71,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 ![n0khshl0hn.png](/selfsni/n0khshl0hn.png)
 
-Скопируйте и вставьте настройки из консоли, нажмите на перезагрузку ядра и сохранения изменений:
+Скопируйте и вставьте настройки из консоли, и укажите xver 1 и нажмите на перезагрузку ядра и сохранения изменений:
 
 ![waterfox_phziqluthw.png](/selfsni/waterfox_phziqluthw.png)
 
