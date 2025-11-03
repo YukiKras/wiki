@@ -39,6 +39,10 @@ dateCreated: 2025-07-06T08:15:10.304Z
 > Готово! После переустановки сервера можете переходить к следующему шагу.
 {.is-success}
 
+# Полностью автоматическая установка и настройка
+
+Для полностью автоматической установки и настройки 3x-ui и Vless рекомендую воспользоваться Vless Wizard: https://github.com/YukiKras/vless-wizard
+
 ## Подключение к серверу по SSH
 
 > Если у вас не установлен Termius то вы можете его скачать отсюда: https://termius.com/download/
@@ -113,6 +117,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 ![image(4).png](/3xui/image(4).png)
 
+> [!WARNING]  
+> Если у вас не открывается панель, то, попробуйте, пожалуйста войти в неё способом, который описан тут: https://github.com/YukiKras/wiki/blob/main/ssh-tunnels.md
+
 После входа мы увидим главную страницу панели:
 
 ![image(5).png](/3xui/image(5).png)
@@ -123,44 +130,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 
 Настроим Vless TCP Reality более правильно.
 
-> Подбор Server Name и Dest рекомендуем выполнять командой **ping**
-> Чем ниже пинг до определенного сайта, тем меньше задержка при работающем соединении
-> **Необходимо выбирать надежные сайты, если сайт будет недоступен, соединения не будет.**
-> **Обязательно выбирайте не популярные но надежные сайты в качестве Server Name и Dest для вашей конфигурации Vless TCP Reality.**
-{.is-warning}
+Рекомендую для SNI/Dest (Target) использовать домены отсюда: https://github.com/YukiKras/vless-wizard/blob/main/sni.txt
 
-**Требования к сайту:**
-**1. TLS 1.3**
-**2. HTTP/2**
-**3. Не должен находиться за CDN сервисом**
-
-Проверить ping можно командой:
-
-``` bash
-ping сайт -c 4
-```
-
-**Лучше подходит для серверов в Швеции и Финляндии:**
-
-``` plaintext
-teamdocs.su 
-```
-
-**Лучше подходит для серверов в Германии и Нидерландов:**
-
-``` plaintext
-wikiportal.su
-```
-
-**Лучше подходит для серверов в Москве:**
-
-``` plaintext
-docscenter.su
-```
-
-![image(3).png](/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban/image(3).png)
-
-В данном случае ping до сайта teamdocs.su оказался самым низким, выберем его в качестве Server Name и Dest, укажем их в данные строки
+В данном случае ping до сайта web.max.ru оказался самым низким, выберем его в качестве Server Name и Dest, укажем их в данные строки
 Необходимо установить порт на значение **443**, так же нажать на кнопку **"Get New Cert"**
 После внесения изменений, необходимо нажать кнопку **"Создать"**
 
@@ -211,6 +183,10 @@ cat /root/3x-ui.txt
 И отсюда вы уже сможете скопировать Vless ключ нового клиента:
 
 ![waterfox_qhz7vjkakp.png](/3xui/waterfox_qhz7vjkakp.png)
+
+## Не открывается панель, что делать?
+
+Попробуйте в неё войти следуя этой инструкции: https://github.com/YukiKras/wiki/blob/main/ssh-tunnels.md
 
 ## Как исправить ошибку предупреждение системы безопасности
 
