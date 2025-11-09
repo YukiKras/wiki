@@ -23,10 +23,22 @@
 
 <img width="380" height="680" alt="AmneziaVPN_oVgybeutJm" src="https://github.com/user-attachments/assets/20e3c891-eb86-4859-be3d-5ce53fbd64eb" />
 
+.
+
+<img width="380" height="680" alt="AmneziaVPN_YV7LXdpKkU" src="https://github.com/user-attachments/assets/ed9e3014-98de-4e01-b392-ef81d623a3c5" />
+
+.
+
+<img width="380" height="680" alt="AmneziaVPN_49RoIHkjuo" src="https://github.com/user-attachments/assets/37fda9a1-04da-487b-bb47-19996574b015" />
+
+.
+
+<img width="380" height="680" alt="AmneziaVPN_9JRh0ZE1Zx" src="https://github.com/user-attachments/assets/71a2620c-93f0-4027-af3e-bb6c2dd3e33f" />
+
 > [!NOTE]  
 > Если не заработало с web.max.ru то попробуйте подобрать себе вариант тут: https://github.com/YukiKras/vless-wizard/blob/main/sni.txt
 
-<img width="380" height="680" alt="AmneziaVPN_YV7LXdpKkU" src="https://github.com/user-attachments/assets/ed9e3014-98de-4e01-b392-ef81d623a3c5" />
+<img width="380" height="680" alt="AmneziaVPN_LKZYUpZ1We" src="https://github.com/user-attachments/assets/733527bc-ce38-4e1f-afbd-bc472a5a90be" />
 
 После этого вы можете пробовать подключиться к VPN.
 
