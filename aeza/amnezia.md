@@ -7,11 +7,19 @@
 
 <img width="380" height="680" alt="AmneziaVPN_YvyfRSkWsX" src="https://github.com/user-attachments/assets/2cb326c2-541b-40ac-bd46-f7ca698b475d" />
 
+.
+
 <img width="380" height="680" alt="AmneziaVPN_fUsiwiJeiP" src="https://github.com/user-attachments/assets/9a32c238-698c-4d00-91bd-7e128be5a507" />
+
+.
 
 <img width="380" height="680" alt="AmneziaVPN_0lEPLLOOOr" src="https://github.com/user-attachments/assets/24af7c21-99fa-4ab6-a856-d4634ee45618" />
 
+.
+
 <img width="380" height="680" alt="AmneziaVPN_CYjXNxnVRy" src="https://github.com/user-attachments/assets/78d8edd9-0d04-4590-b00e-94169d1775c1" />
+
+.
 
 <img width="380" height="680" alt="AmneziaVPN_oVgybeutJm" src="https://github.com/user-attachments/assets/20e3c891-eb86-4859-be3d-5ce53fbd64eb" />
 
