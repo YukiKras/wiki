@@ -10,6 +10,8 @@
 
 ## VPN
 
+[Установка и настройка Hysteria2](https://github.com/YukiKras/wiki/blob/main/hysteria2-install.md)
+
 [Установка и настройка 3x-ui панели](https://github.com/YukiKras/wiki/blob/main/razvertyvanie-proksi-protokola-vless-s-pomoshyu-3x-ui.md)
 
 [Установка и настройка Marzban панели](https://github.com/YukiKras/wiki/blob/main/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban.md)

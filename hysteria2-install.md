@@ -67,11 +67,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 ```
 Жмём **Enter**, и ожидаем установку:
 
-
+![WindowsTerminal_PEhM78eV4l.png](/hysteria2/WindowsTerminal_PEhM78eV4l.png)
 
 После окончания установки можете копировать Vless ключ и вставлять в свой VPN клиент:
 
-
+![cIUuDHjO1X.png](/hysteria2/cIUuDHjO1X.png)
 
 ## Подключение ключа в клиент Hysteria2
 
